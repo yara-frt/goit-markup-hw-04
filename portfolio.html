@@ -19,7 +19,7 @@
     <header class="main-header">
       <div class="container header">
         <nav class="nav">
-          <a class="logo link" href="./index.html"
+          <a class="logo link logo-padding" href="./index.html"
             >Web<span class="logo-black">Studio</span></a
           >
           <ul class="nav-items list">
@@ -34,12 +34,22 @@
         </nav>
 
         <ul class="list contacts-box">
-          <li>
+          <li class="email-box">
+            <a href="mailto:info@devstudio.com" class="link contacts-item">
+              <svg aria-label="іконка конверта" class="envelope">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+            </a>
             <a class="link contacts-item" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="email-box">
+            <a href="tel:+380961111111" class="link contacts-item">
+              <svg aria-label="іконка смартфона" class="smartphone">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+            </a>
             <a class="link contacts-item" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -60,8 +70,9 @@
           </ul>
           <ul class="list list-exampl">
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
+                  class="example-img"
                   src="./images/portfolio-img-1.jpg"
                   alt="веб-сайт"
                   width="370"
@@ -74,7 +85,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-2.jpg"
                   alt="дизайн"
@@ -90,7 +101,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-3.jpg"
                   alt="додаток"
@@ -104,7 +115,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-4.jpg"
                   alt="маркетинг"
@@ -118,7 +129,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-5.jpg"
                   alt="додаток"
@@ -132,7 +143,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-6.jpg"
                   alt="веб-сайт"
@@ -146,7 +157,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-7.jpg"
                   alt="дизайн"
@@ -160,7 +171,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-8.jpg"
                   alt="маркетинг"
@@ -174,7 +185,7 @@
               >
             </li>
             <li class="exampl-item">
-              <a class="link" href="#"
+              <a class="link example-list-link" href="#"
                 ><img
                   src="./images/portfolio-img-9.jpg"
                   alt="додаток"
@@ -193,31 +204,70 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="link logo" href="./index.html"
-          >Web<span class="logo-white">Studio</span></a
-        >
-        <address class="footer-address">
-          <ul class="list">
-            <li class="address-item">
-              <a
-                class="link address"
-                href="https://goo.gl/maps/fcCiF2iR8cgjhNaz8"
-                rel="nofollow noopener noreferrer"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="link footer-contacts" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="link footer-contacts" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="box-address">
+          <div class="address-main-block">
+            <a class="link logo" href="./index.html"
+              >Web<span class="logo-white">Studio</span></a
+            >
+            <address class="footer-address">
+              <ul class="list">
+                <li class="address-item">
+                  <a
+                    class="link address"
+                    href="https://goo.gl/maps/fcCiF2iR8cgjhNaz8"
+                    rel="nofollow noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a
+                    class="link footer-contacts"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a class="link footer-contacts" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-add">
+            <h2 class="title-social-add">приєднуйтесь</h2>
+            <ul class="list social-add-list">
+              <li class="social-add-list-item">
+                <a href="" class="social-add-link">
+                  <svg class="social-add-icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-add-list-item">
+                <a href="" class="social-add-link">
+                  <svg class="social-add-icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-add-list-item">
+                <a href="" class="social-add-link">
+                  <svg class="social-add-icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-add-list-item">
+                <a href="" class="social-add-link">
+                  <svg class="social-add-icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

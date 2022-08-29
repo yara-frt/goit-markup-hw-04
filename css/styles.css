@@ -9,6 +9,8 @@
     --second-background-color: #F5F5F5;
     --our-team-color: #F5F4FA;
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --social-color: #AFB1B8;
+    --footer-social-bg: rgba(255, 255, 255, 0.1);
 }
 
 /* body */
@@ -132,12 +134,42 @@ button {
     color: var(--tuch-color);
 }
 
+.email-box {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+    fill: var(--contact-color);
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+    fill: var(--contact-color);
+}
+
+.envelope:hover,
+.envelope:focus,
+.smartphone:hover,
+.smartphone:focus {
+    fill: var(--tuch-color);
+}
+
+
 /* main */
 
 .first-section {
     background-color: var(--first-background-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+    background-size: cover;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .box-first-section {
@@ -209,6 +241,9 @@ button {
 
 .our-features-item {
     width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .subtitle {
     font-weight: 700;
@@ -222,6 +257,22 @@ button {
     color: var(--contact-color);
     font-size: 14px;
     line-height: 1.7;
+}
+
+.block-icon-features {
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 100px;
+}
+
+.icon-our-features {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.our-block {
+    margin-top: 30px;
 }
 
 /* section three */
@@ -292,6 +343,79 @@ padding: 30px;
     margin-top: 10px;
 }
 
+.social-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--tuch-color);
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--social-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--white-color);
+}
+
+/* customers */
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    padding-bottom: 94px;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid #2196F3;
+}
+
+.customers-icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--social-color);
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+    fill: var(--tuch-color);
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+    fill: var(--tuch-color);
+}
+
 /* footer */
 
 .footer {
@@ -327,6 +451,48 @@ padding: 30px;
 .footer-contacts:hover,
 .footer-contacts:focus {
     color: var(--tuch-color);
+}
+
+.box-address {
+    display: flex;
+    gap: 70px;
+}
+
+.title-social-add {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.social-add-list {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.social-add-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--footer-social-bg);
+}
+
+.social-add-link:hover,
+.social-add-link:focus {
+    background-color: var(--tuch-color);
+}
+
+.social-add-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--white-color);
 }
 
 /* portfolio filtr */
@@ -379,6 +545,12 @@ padding: 30px;
     gap: 30px;
 
 }
+
+.exampl-item:hover, 
+.exampl-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .subtitle-portfolio {
     text-decoration: none;
