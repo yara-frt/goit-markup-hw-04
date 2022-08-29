@@ -377,6 +377,10 @@ padding: 30px;
 
 /* customers */
 
+.title-customers {
+ padding-top: 94px;
+}
+
 .customers-list {
     display: flex;
     justify-content: center;
